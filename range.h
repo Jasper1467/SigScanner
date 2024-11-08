@@ -11,9 +11,9 @@ namespace memory
 	public:
 		range(handle base, std::size_t sizem);
 
-		handle begin();
+		handle begin() const;
 		handle end();
-		std::size_t size();
+		std::size_t size() const;
 		TCHAR* mod_name();
 
 		bool contains(handle h);

@@ -8,7 +8,7 @@ namespace memory
 	{			
 	}
 
-	handle range::begin()
+	handle range::begin() const
 	{
 		return m_base;
 	}
@@ -18,7 +18,7 @@ namespace memory
 		return m_base.add(m_size);
 	}
 
-	std::size_t range::size()
+	std::size_t range::size() const
 	{
 		return m_size;
 	}
